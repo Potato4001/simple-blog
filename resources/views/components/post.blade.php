@@ -17,9 +17,11 @@
                 </div>
 
                 <div class="mt-4">
-                    <h1 class="text-3xl">
-                        {{$post->title}}
-                    </h1>
+                    <a href=" {{url('post/' . $post->id)}}">
+                        <h1 class="text-3xl">
+                            {{$post->title}}
+                        </h1>
+                    </a>
 
                     <span class="mt-2 block text-gray-400 text-xs">
                         Published <time>1 day ago</time>
@@ -48,7 +50,7 @@
                 </div>
 
                 <div @if($leading) class="hidden lg:block" @endif>
-                    <a href="#"
+                    <a href="{{url('post/' . $post->id)}}"
                     class="transition-colors duration-300 text-xs font-semibold bg-gray-200 hover:bg-gray-300 rounded-full py-2 px-8"
                     >Read More</a>
                 </div>
