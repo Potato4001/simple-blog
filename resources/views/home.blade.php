@@ -64,13 +64,17 @@
                     </div>
                 </div>
             </header>
+            <div class="text-red-300 border-red-300 text-cyan-300 text-lime-300
+                border-cyan-300
+                border-lime-300">
+            </div>
         </x-slot>
 
     <x-post leading="1" :post="$posts[0]"/>
 
     <div class="lg:grid lg:grid-cols-2">
         
-        @for ($i = 1; $i < 3; $i++)
+        @for ($i = 1; $i < 6; $i++)
         
             <x-post leading="0" :post="$posts[$i]" />
 
@@ -80,7 +84,7 @@
 
     <div class="lg:grid lg:grid-cols-3">
 
-        @for ($i = 3; $i < 6; $i++)
+        @for ($i = 7; $i < 12; $i++)
         
             <x-post leading="0" :post="$posts[$i]" />
 
