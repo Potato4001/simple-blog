@@ -36,7 +36,7 @@
                     <!-- Other Filters -->
                     <div class="relative flex lg:inline-flex items-center bg-gray-100 rounded-xl">
                         <select class="flex-1 appearance-none bg-transparent py-2 pl-3 pr-9 text-sm font-semibold border-0 bg-none">
-                            <option value="category" disabled selected>Other Filters
+                            <option value="category" disabled selected>Tags
                             </option>
                             <option value="foo">Foo
                             </option>
@@ -74,7 +74,7 @@
 
     <div class="lg:grid lg:grid-cols-2">
         
-        @for ($i = 1; $i < 6; $i++)
+        @for ($i = 1; $i < 4; $i++)
         
             <x-post leading="0" :post="$posts[$i]" />
 
@@ -84,7 +84,7 @@
 
     <div class="lg:grid lg:grid-cols-3">
 
-        @for ($i = 7; $i < 12; $i++)
+        @for ($i = 5; $i < 8; $i++)
         
             <x-post leading="0" :post="$posts[$i]" />
 
